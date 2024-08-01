@@ -94,8 +94,6 @@ int main(void)
      configASSERT(status == pdPASS);
      status = xTaskCreate(task2_handle, "Task-2", 200, "Hello Amiya from task-2", 2, &task2_handler);
      configASSERT(status == pdPASS);
-     status = xTaskCreate(task2_handle, "Task-2", 200, "Hello Amiya from task-2", 2, &task2_handler);
-     configASSERT(status == pdPASS);
      vTaskStartScheduler();
   /* USER CODE END 2 */
 
